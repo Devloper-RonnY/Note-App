@@ -1,0 +1,237 @@
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      width:100%;
+      min-height:100vh;
+      background:#efefef;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .container{
+      display:flex;
+      align-items:flex-start;
+      gap:30px;
+      /* display: block; */
+    }
+
+    /* ========= LEFT BUTTONS ========= */
+
+    .side-icons{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .icon{
+      width:55px;
+      height:55px;
+      border-radius:50%;
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:30px;
+      cursor:pointer;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+     /* ========= RIGHT CLORS ========= */
+
+     .side-colors{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+     }
+
+     .color{
+      width:28px;
+      height:28px;
+      border-radius:50%;
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+     }
+
+    .black{
+        background-color: #000;
+     }
+    .skyblue{
+        background-color: skyblue;
+     }
+    .orange{
+        background-color: orange;
+     }
+    .blueviolet{
+        background-color: blueviolet;
+     }
+
+    /* ========= TODO CARD ========= */
+
+    .todo-card{
+      width:380px;
+      background:#fff;
+      padding:30px;
+      border-radius:25px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .top{
+      display:flex;
+      align-items:center;
+      gap:15px;
+      margin-bottom:20px;
+    }
+
+    .top img{
+      width:65px;
+      height:65px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .top h2{
+      font-size:34px;
+    }
+
+    .info{
+      display:flex;
+      justify-content:space-between;
+      margin-bottom:15px;
+      color:#555;
+      font-size:18px;
+    }
+
+    .btns{
+      display:flex;
+      gap:15px;
+      margin-top:25px;
+    }
+
+    .call-btn,
+    .msg-btn{
+      padding:12px 22px;
+      border:none;
+      border-radius:25px;
+      font-size:17px;
+      cursor:pointer;
+      font-weight:600;
+    }
+
+    .call-btn{
+      background:#000;
+      color:#fff;
+    }
+
+    .msg-btn{
+      background:#eee;
+    }
+
+    /* ========= FORM ========= */
+
+    .form-card{
+      width:430px;
+      background:#fff;
+      border-radius:25px;
+      padding:30px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+      display:none;
+      position:fixed;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+
+    }
+
+    .form-card h1{
+      margin-bottom:25px;
+      font-size:42px;
+    }
+
+    .input-box{
+      margin-bottom:20px;
+    }
+
+    .input-box h4{
+      margin-bottom:8px;
+      font-size:16px;
+    }
+
+    .input-box input{
+      width:100%;
+      height:52px;
+      border:1px solid #ddd;
+      border-radius:30px;
+      padding:0 20px;
+      outline:none;
+      font-size:15px;
+      background:#fafafa;
+    }
+
+    .category{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:10px;
+    }
+
+    .tag{
+      padding:12px 18px;
+      border-radius:30px;
+      background:#fff;
+      font-size:14px;
+      font-weight:600;
+      cursor: pointer;
+    }
+
+    .red{
+      border:2px solid #ff4d4d;
+      color:#ff4d4d;
+    }
+
+    .orange{
+      border:2px solid #ff9d2f;
+      color:#ff9d2f;
+    }
+
+    .purple{
+      border:2px solid #9b4dff;
+      color:#9b4dff;
+    }
+
+    .gray{
+      border:2px solid #ccc;
+      color:#777;
+    }
+
+    .btn{
+      width:100%;
+      height:55px;
+      border:none;
+      border-radius:35px;
+      margin-top:18px;
+      font-size:18px;
+      font-weight:600;
+      cursor:pointer;
+    }
+
+    .create{
+      background:#000;
+      color:#fff;
+    }
+
+    .close{
+      background:#ff4b57;
+      color:#fff;
+    }
+

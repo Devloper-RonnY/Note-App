@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- ========= LEFT ICON ========= -->
+
+    <div class="side-icons">
+      <div class="icon plus">+</div>
+      <div class="icon up">↑</div>
+      <div class="icon down">↓</div>
+    </div>
+
+    <!-- ========= TODO CARD ========= -->
+
+    <div class="todo-card">
+
+      <div class="top">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300">
+
+        <h2>Fatima Uma</h2>
+      </div>
+
+      <div class="info">
+        <span>Home town</span>
+        <span>Singapore</span>
+      </div>
+
+      <div class="info">
+        <span>Bookings</span>
+        <span>3 times</span>
+      </div>
+
+      <div class="btns">
+        <button class="call-btn">📞 Call</button>
+        <button class="msg-btn">Message</button>
+      </div>
+
+    </div>
+
+    <!-- ========= RIGHT ICON ========= -->
+
+    <div class="side-colors">
+      <div class="color black"></div>
+      <div class="color skyblue"></div>
+      <div class="color orange"></div>
+      <div class="color blueviolet"></div>
+    </div>
+
+  </div>
+
+  <!-- ========= FORM ========= -->
+
+  <div class="form-card">
+
+    <h1>New Call</h1>
+
+    <div class="input-box">
+      <h4>Image URL</h4>
+      <input type="text" placeholder="https://example.com/photo.jpg">
+    </div>
+
+    <div class="input-box">
+      <h4>Full Name</h4>
+      <input type="text" placeholder="Enter full name">
+    </div>
+
+    <div class="input-box">
+      <h4>Home Town</h4>
+      <input type="text" placeholder="Enter home town">
+    </div>
+
+    <div class="input-box">
+      <h4>Purpose</h4>
+      <input type="text" placeholder="e.g., Quick appointment note">
+    </div>
+
+    <div class="input-box">
+      <h4>Category</h4>
+
+      <div class="category">
+        <button class="tag red">Emergency</button>
+        <button class="tag orange">Important</button>
+        <button class="tag purple">Urgent</button>
+        <button class="tag gray">No Rush</button>
+      </div>
+
+    </div>
+
+    <button class="btn create">Create Note</button>
+    <button class="btn close">Close</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
