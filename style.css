@@ -113,7 +113,7 @@
 
     .btns{
       display:flex;
-      gap:15px;
+      gap:100px;
       margin-top:25px;
     }
 
