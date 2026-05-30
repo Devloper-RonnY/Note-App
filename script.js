@@ -20,6 +20,7 @@ let submitbtn = document.querySelector(".create");
 let closebtn = document.querySelector(".close");
 
 //    input btn section
+let inputs = document.querySelectorAll(".input-box");
 let imageinp = document.querySelector("#image-inp");
 let nameinp = document.querySelector("#name-inp");
 let homeinp = document.querySelector("#home-inp");
@@ -38,8 +39,24 @@ let purplebtn = document.querySelector(".purple");
 let graybtn = document.querySelector(".gray");
 
 
+//  save data to local storage
+function saveToLocalStoarage(obj){
+    console.log("function called");
+     
+    if(localStorage.getItem("tasks") === null){ 
+        let oldtasks = []; 
+        oldtasks.push(obj);
+        localStorage.setItem("tasks", JSON.stringify(oldtasks)) 
+    } else { 
+        let oldtasks = localStorage.getItem("tasks"); 
+        oldtasks = JSON.parse(oldtasks); 
+        oldtasks.push(obj); 
+        localStorage.setItem("tasks", JSON.stringify(oldtasks)) 
+    } 
+}
 
 let selectedbtn = "";
+
 categorybtn.forEach(function(cats){
     cats.addEventListener("click", function(){
 
@@ -58,9 +75,10 @@ categorybtn.forEach(function(cats){
 
 
 closebtn.addEventListener("click", function(){
-    formCard.style.display = "none"
-    container.style.display = "flex"
+        formCard.style.display = "none"
+        container.style.display = "flex"
 })
+
 
 addNote.addEventListener("click", function(){
     formCard.style.display = "block"
@@ -97,5 +115,17 @@ form.addEventListener("submit", function(e){
         if(!selectedbtn){
             alert("please select button")
         }
+
+        saveToLocalStoarage({
+            imageUrl,
+            nameUrl,
+            homeUrl,
+            purposeUrl,
+            selectedbtn
+        })
+
+    form.reset();
+     formCard.style.display = "none"
+    container.style.display = "flex"
 });
 
