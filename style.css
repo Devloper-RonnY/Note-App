@@ -161,6 +161,12 @@
     .input-box{
       margin-bottom:20px;
     }
+    
+    .error-image, .error-name, .error-home, .error-purpose{
+      display: none;
+      font-size: 20px;
+      color: red;
+    }
 
     .input-box h4{
       margin-bottom:8px;

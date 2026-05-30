@@ -59,27 +59,31 @@
   <!-- ========= FORM ========= -->
 
   <div class="form-card">
-    <form action="">
+    <form>
          <h1>New Call</h1>
 
     <div class="input-box">
       <h4>Image URL</h4>
-      <input required type="text" placeholder="https://example.com/photo.jpg">
+      <input id="image-inp" type="text" placeholder="https://example.com/photo.jpg">
+      <small class="error-image"></small>
     </div>
 
     <div class="input-box">
       <h4>Full Name</h4>
-      <input required type="text" placeholder="Enter full name">
+      <input id="name-inp" type="text" placeholder="Enter full name">
+      <small class="error-name"></small>
     </div>
 
     <div class="input-box">
       <h4>Home Town</h4>
-      <input required type="text" placeholder="Enter home town">
+      <input id="home-inp" type="text" placeholder="Enter home town">
+      <small class="error-home"></small>
     </div>
 
     <div class="input-box">
       <h4>Purpose</h4>
-      <input required type="text" placeholder="e.g., Quick appointment note">
+      <input id="purpose-inp" type="text" placeholder="e.g., Quick appointment note">
+      <small class="error-purpose"></small>
     </div>
 
     <div class="input-box">
@@ -92,6 +96,7 @@
         <button class="tag gray">No Rush</button>
       </div>
 
+      
     </div>
 
     <button class="btn create">Create Note</button>
